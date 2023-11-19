@@ -8,10 +8,10 @@ import Navbar from "./components/Navbar";
 const theme = createTheme({
   palette: {
     primary: {
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
-      contrastText: '#fff',
+      light: '#FDDF30',
+      main: '#FAC600',
+      dark: '#E8B801',
+      contrastText: '#000',
     },
     secondary: {
       light: '#ff7961',

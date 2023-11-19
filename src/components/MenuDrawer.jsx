@@ -6,10 +6,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { useState } from 'react';
-import { IconButton } from '@mui/material';
+import { Divider, IconButton, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
-
+import lemonSvg from '/src/assets/lemon.svg';
 
 const navigation = [
     { text: 'Home', path: '/' },
@@ -38,6 +38,20 @@ export default function MenuDrawer() {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
+            <Box sx={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+                marginTop: 4,
+                marginBottom: 2,
+                gap: 2
+            }}>
+                <img src={lemonSvg} alt="Lemon Icon" width="100" />
+                <Typography variant='h6'>
+                    The Little Lemon
+                </Typography>
+            </Box>
+            <Divider />
             <List>
                 {navigation.map(({ text, path }, index) => (
                     <ListItem key={text} disablePadding>
@@ -47,7 +61,7 @@ export default function MenuDrawer() {
                     </ListItem>
                 ))}
             </List>
-        </Box>
+        </Box >
     );
 
     return (
