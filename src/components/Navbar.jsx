@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import MenuDrawer from './MenuDrawer';
 import { IconButton } from '@mui/material';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
 
@@ -14,10 +15,10 @@ export default function Navbar() {
             <AppBar position="static">
                 <Toolbar>
                     <MenuDrawer />
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    <Typography component={Link} to={'/'} variant="h6" sx={{ flexGrow: 1 }}>
                         The Little Lemon
                     </Typography>
-                    <IconButton>
+                    <IconButton component={Link} to={'/my-cart'}>
                         <ShoppingBasketIcon />
                     </IconButton>
                 </Toolbar>
