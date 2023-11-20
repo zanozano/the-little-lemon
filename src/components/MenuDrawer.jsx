@@ -6,19 +6,25 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import { useState } from 'react';
-import { Divider, IconButton, Typography } from '@mui/material';
+import { Divider, IconButton, ListItemIcon, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import lemonSvg from '/src/assets/lemon.svg';
 
+//icon
+import HomeIcon from '@mui/icons-material/Home';
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import InfoIcon from '@mui/icons-material/Info';
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
+
 const navigation = [
-    { text: 'Home', path: '/' },
-    { text: 'About', path: '/about' },
-    { text: 'Menu', path: '/menu' },
-    { text: 'Contact Us', path: '/contact-us' },
-
+    { text: 'Home', path: '/', icon: <HomeIcon /> },
+    { text: 'My Cart', path: '/my-cart', icon: <ShoppingBasketIcon /> },
+    { text: 'Menu', path: '/menu', icon: <RestaurantMenuIcon /> },
+    { text: 'About', path: '/about', icon: <InfoIcon /> },
+    { text: 'Contact Us', path: '/contact-us', icon: <ContactSupportIcon /> },
 ];
-
 
 export default function MenuDrawer() {
     const [state, setState] = useState({
@@ -55,9 +61,12 @@ export default function MenuDrawer() {
             </Box>
             <Divider />
             <List>
-                {navigation.map(({ text, path }, index) => (
+                {navigation.map(({ text, path, icon }, index) => (
                     <ListItem key={text} disablePadding>
                         <ListItemButton component={Link} to={path}>
+                            <ListItemIcon>
+                                {icon}
+                            </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItemButton>
                     </ListItem>

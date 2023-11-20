@@ -6,6 +6,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { MyCart } from "./routes/MyCart";
 
 const theme = createTheme({
   palette: {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/my-cart" element={<MyCart />} />
       </Routes>
       <Footer />
     </ThemeProvider>
