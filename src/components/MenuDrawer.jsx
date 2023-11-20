@@ -14,7 +14,9 @@ import lemonSvg from '/src/assets/lemon.svg';
 const navigation = [
     { text: 'Home', path: '/' },
     { text: 'About', path: '/about' },
-    { text: 'Menu', path: '/menu' }
+    { text: 'Menu', path: '/menu' },
+    { text: 'Contact Us', path: '/contact-us' },
+
 ];
 
 
@@ -61,7 +63,7 @@ export default function MenuDrawer() {
                     </ListItem>
                 ))}
             </List>
-        </Box >
+        </Box>
     );
 
     return (

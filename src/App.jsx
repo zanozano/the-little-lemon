@@ -1,9 +1,11 @@
 import { Home } from "./routes/Home";
 import { About } from "./routes/About";
 import { Menu } from "./routes/Menu";
+import { ContactUs } from "./routes/ContactUs";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
 const theme = createTheme({
   palette: {
@@ -31,8 +33,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/menu" element={<Menu />} />
       </Routes>
+      <Footer />
     </ThemeProvider>
   )
 }
