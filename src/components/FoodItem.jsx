@@ -11,7 +11,7 @@ export default function FoodItem() {
         <Card elevation={1} sx={{ maxWidth: 345 }}>
             <CardMedia
                 sx={{ height: 140 }}
-                image="/public/static/images/fast-food.jpg"
+                image="/public/images/fast-food.jpg"
                 title="Pizza"
             />
             <CardContent>
