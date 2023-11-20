@@ -1,7 +1,8 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 export const MyCart = () => {
     return (
-        <div>MyCart</div>
+        <Box minHeight={'70vh'}>MyCart</Box>
     )
 }

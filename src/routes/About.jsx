@@ -3,7 +3,7 @@ import React from 'react'
 
 export const About = () => {
     return (
-        <Box sx={{ margin: '44px' }}>
+        <Box minHeight={'70vh'} sx={{ margin: '44px' }}>
             <Card elevation={1}>
                 <CardMedia
                     sx={{ height: { xs: '200px', md: '400px' } }}
