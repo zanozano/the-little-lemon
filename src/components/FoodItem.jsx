@@ -25,7 +25,7 @@ export default function FoodItem({ title, image }) {
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button size="small">Add to Cart</Button>
+                <Button variant="contained" size="medium">Add to Cart</Button>
             </CardActions>
         </Card>
     );
