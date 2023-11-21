@@ -4,10 +4,10 @@ import { Box, Typography } from '@mui/material'
 
 
 const items = [
-    { title: 'Fast Food', image: '/public/images/fast-food.jpg' },
-    { title: 'Dessert', image: '/public/images/dessert.jpg' },
-    { title: 'Healthy', image: '/public/images/healthy.jpg' },
-    { title: 'Salad', image: '/public/images/salad.jpg' },
+    { title: 'Fast Food', image: '/images/fast-food.jpg' },
+    { title: 'Dessert', image: '/images/dessert.jpg' },
+    { title: 'Healthy', image: '/images/healthy.jpg' },
+    { title: 'Salad', image: '/images/salad.jpg' },
 ];
 
 export const Home = () => {

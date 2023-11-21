@@ -7,7 +7,7 @@ export const About = () => {
             <Card elevation={1}>
                 <CardMedia
                     sx={{ height: { xs: '200px', md: '400px' } }}
-                    image="/public/images/restaurant.jpg"
+                    image="/images/restaurant.jpg"
                     title="Pizza"
                 />
                 <CardContent sx={{ padding: 6 }}>
