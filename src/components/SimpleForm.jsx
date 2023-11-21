@@ -56,8 +56,8 @@ export const SimpleForm = () => {
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
             />
-            <Button variant="contained" color="primary" type="submit">
-                Submit
+            <Button fullWidth size='large' variant="contained" color="primary" type="submit" sx={{ marginTop: 3 }}>
+                Send your message
             </Button>
         </form>
     )
