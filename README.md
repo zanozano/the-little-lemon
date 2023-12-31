@@ -7,6 +7,7 @@
 Welcome to The Little Lemon App, your passport to an extraordinary culinary journey. Immerse yourself in the world of flavors, where ordering from your favorite restaurant transforms into an immersive experience. This app is not just a food-ordering platform; it's a celebration of taste, where each dish tells a story.
 
 **Key Features:**
+
 - **Interactive Menu**: Dive into our interactive menu, where each dish is showcased with vibrant images and captivating descriptions.
 - **Seamless Order Management**: Effortlessly manage your orders, customize dishes, and witness your culinary selections come to life in the virtual shopping bag.
 - **Express Delivery**: Experience the convenience of express delivery, ensuring your favorite dishes reach you with the utmost freshness.
