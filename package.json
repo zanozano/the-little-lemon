@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.18",
     "@mui/material": "^5.14.18",
+    "firebase": "^10.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.19.0",
@@ -30,5 +31,9 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "react-svg-loader": "^3.0.0",
     "vite": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zanozano/the-little-lemon-app.git"
   }
 }

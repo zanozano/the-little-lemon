@@ -28,6 +28,7 @@ Whether you're a seasoned foodie exploring new horizons or someone seeking a qui
   - [Contributions](#contributions)
   - [Author](#author)
   - [Repository](#repository)
+  - [Live Web](#live-web)
 
 ## Usage
 
@@ -97,3 +98,7 @@ Author: Cristobal Manzano
 
 - Type: Git
 - URL: [https://github.com/zanozano/the-little-lemon-app.git](https://github.com/zanozano/the-little-lemon-app.git)
+
+## Live Web
+
+Explore The Little Lemon App live at [https://the-little-lemon-app.web.app/](https://the-little-lemon-app.web.app/)
