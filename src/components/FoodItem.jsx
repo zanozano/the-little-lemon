@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-export default function FoodItem({ title, image }) {
+export default function FoodItem({ title, image, desc }) {
 
     return (
         <Card elevation={1} sx={{ maxWidth: 345 }}>
@@ -20,12 +20,11 @@ export default function FoodItem({ title, image }) {
                     {title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    {desc}
                 </Typography>
             </CardContent>
             <CardActions>
-                <Button variant="contained" size="medium">Add to Cart</Button>
+                <Button fullWidth variant="contained" size="medium">See our offers</Button>
             </CardActions>
         </Card>
     );
